@@ -237,11 +237,16 @@ position: relative;
 }
 .main-header {
 position: relative;
-float: right;
+float: right; /*donde se colocaria una imagen si la metemos*/
 width: 100%; /* Ancho de la página con respecto a la ventana */
 z-index: 99;
 /*background-image: url(images/hbg.gif);*/
-border-bottom: 7px solid #005993   /* Grosor de la línea base de la cabera */
+border-bottom: 7px solid #005993   /* Grosor y color de la línea base de la cabecera */
+}
+#finidi {
+    position: static;
+    color: green;
+    float: left;
 }
 #header{ 
 float:left;
