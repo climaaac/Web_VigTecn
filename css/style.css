@@ -161,6 +161,10 @@ margin-right: auto;
 margin-left: auto;
 overflow: hidden;
 }
+.container2 {
+    margin-right: 50px;
+    margin-left: 50px;
+}
 h1,h2,h3,h4,h5,h6{
 font-weight:normal;
 margin-bottom:12px;
@@ -220,8 +224,8 @@ padding-top:20px;
 #page,
 .container{
 max-width: 960px;   /*Ancho máximo de la página*/
-min-width:240px;    /*Ancho mínimo de la página*/
-overflow: visible;
+min-width: 240px;    /*Ancho mínimo de la página*/
+overflow: visible;  /*The overflow is not clipped. It renders outside the element's box. This is default*/
 }
 #page{
 min-height:100px;
@@ -280,26 +284,30 @@ display: block;
 float: left;
 width: 100%;
 }
-.secondary-navigation ul li {
+.secondary-navigation ul li { /*esto que es*/
 }
-.secondary-navigation a {
-font-family: 'Arial', sans-serif;
-font-size: 22px;
-line-height: 1.2em;
-text-align: center;
-text-decoration: none;
-text-transform: uppercase;
-padding: 17px 35px 0 0;
-transition: all 0.25s linear;
-text-shadow: 0px 2px   #CCC;
+.secondary-navigation a { 
+font-family: 'Verdana', sans-serif; /*tipografia*/
+font-size: 12px; /*medida de la tipografia*/
+line-height: 1.2em; /*interlineado*/
+text-align: center; /*alineacion del texto*/
+text-decoration: none; /*The text-decoration property specifies the decoration added to text, and is a shorthand property for:
+
+    text-decoration-line (required)
+    text-decoration-color
+    text-decoration-style
+*/
+text-transform: uppercase; /*mayusculas*/
+padding: 17px 35px 0 0; /*margenes*/
+transition: all 0.25s linear; /*transition: property duration timing-function delay|initial|inherit;*/
+text-shadow: 0px 1px   #CCC;
 color: #777;
 }
-.secondary-navigation a:hover {
+.secondary-navigation a:hover { /*Select and style a link when you mouse over it:*/
 color: #79ACCD;
 }
 #navigation{
 margin: 0 auto;
-font-size:13px;
 float: left;
 width: 100%;
 }
@@ -400,7 +408,7 @@ border-color:transparent rgba(14,19,22,0.92) transparent transparent;
 left:-12px;
 top:3px;
 }
-#navigation .menu-item-has-children > a:after {
+#navigation .menu-item-has-cat > a:after {
     color: #777;
     content:'Â»';
     position: absolute;
